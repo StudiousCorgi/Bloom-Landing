@@ -1,0 +1,104 @@
+.butterfly-kids-regular {
+    font-family: "Butterfly Kids", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Butterfly Kids", cursive;
+}
+
+.hero {
+    background: #e7718b;
+    padding: 10px 0;
+    color: white;
+    text-align: left;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 40px 0;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+}
+
+.products {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 150px;
+    height: 100px;
+    background: gray;
+}
+
+/* Testimonials section */
+
+.testimonials {
+    background: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
