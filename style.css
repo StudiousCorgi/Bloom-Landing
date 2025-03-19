@@ -29,8 +29,10 @@ header {
 }
 
 .social-icons img {
-    width: 30px;
+    width: auto;
+    height: 50px;
     margin-left: 10px;
+    align-items: center;
 }
 
 .hero {
