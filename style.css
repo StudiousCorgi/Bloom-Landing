@@ -2,7 +2,7 @@
     font-family: "Butterfly Kids", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -11,28 +11,37 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
+.header-container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
 header {
     background: #222;
     color: white;
     padding: 20px 0;
-    text-align: center;
     font-family: "Butterfly Kids", cursive;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
 }
 
 .hero {
     background: #e7718b;
-    padding: 10px 0;
+    padding: 50px 0;
     color: white;
-    text-align: left;
 }
 
-.hero .container {
+.hero-container {
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,63 +51,148 @@ header {
     width: 50%;
 }
 
-.hero-image img {
-    width: 100%;
-    max-width: 600px;
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-button {
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
     background: #222;
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 10px;
+    margin-right: 10px;
     cursor: pointer;
-    border-radius: 15%;
+    border-radius: 5px;
 }
 
-.features {
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.feat-container {
+    background: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feat-container .row {
     display: flex;
     justify-content: space-around;
-    background: white;
-    padding: 40px 0;
+    width: 80%;
+    margin: auto;
 }
 
-.feature {
+.feat-container .col-4 {
     width: 30%;
-    text-align: center;
 }
 
-.products {
-    background: #f4f4f4;
-    padding: 40px 0;
-    text-align: center;
+.feat-container h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.feat-container img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.Lower-Content {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.lower-container {
+    width: 80%;
+    margin: auto;
+}
+
+.lower-container .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-container .col-8 {
+    width: 65%;
+}
+
+.lower-container .col-4 {
+    width: 30%;
 }
 
 .product-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
 .product {
-    width: 150px;
-    height: 100px;
+    width: 100%;
+    height: 200px;
     background: gray;
+    border-radius: 10px;
 }
-
-/* Testimonials section */
 
 .testimonials {
-    background: white;
-    padding: 40px 0;
-    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
 }
-
 
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .feat-container .row {
+        flex-direction: column;
+    }
+
+    .feat-container .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lower-container .row {
+        flex-direction: column;
+    }
+
+    .lower-container .col-8, .lower-container .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
